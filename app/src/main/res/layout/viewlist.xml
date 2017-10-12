@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#000"
+    android:weightSum="1"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff"
+        android:padding="15dp">
+
+
+
+        <ImageView
+            android:id="@+id/ImageViewList"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@android:drawable/btn_dialog" />
+
+        <TextView
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="@string/name"
+            android:textColor="#333"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ImageViewList"
+            android:layout_toEndOf="@+id/ImageViewList" />
+
+        <TextView
+            android:id="@+id/editTextPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextName"
+            android:layout_alignStart="@+id/editTextName"
+            android:layout_below="@+id/editTextName"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:text="@string/price" />
+
+        <TextView
+            android:id="@+id/editTextdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextPrice"
+            android:layout_alignStart="@+id/editTextPrice"
+            android:layout_below="@+id/editTextPrice"
+            android:layout_marginTop="21dp"
+            android:ems="10"
+            android:text="@string/description" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

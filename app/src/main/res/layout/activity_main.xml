@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#faebd7"
+    tools:context="com.khent.cabural.dreamlister.MainActivity">
+
+    <EditText
+        android:id="@+id/AddItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="Item Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/AddItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AddItemName"
+        android:layout_alignStart="@+id/AddItemName"
+        android:layout_below="@+id/AddItemName"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/AddItemDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AddItemPrice"
+        android:layout_alignStart="@+id/AddItemPrice"
+        android:layout_below="@+id/AddItemPrice"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textPersonName" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:onClick="PickPhoto"
+        android:layout_width="177dp"
+        android:layout_height="177dp"
+        app:srcCompat="@drawable/cam"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/Addbutton"
+        android:onClick="AddItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:text="Add"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/ViewListButton"
+        android:layout_alignBottom="@+id/ViewListButton"
+        android:layout_toLeftOf="@+id/ViewListButton"
+        android:layout_toStartOf="@+id/ViewListButton"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp" />
+
+    <Button
+        android:id="@+id/ViewListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:background="@android:color/black"
+        android:onClick="ViewItem"
+        android:text="View List"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/AddItemDesc"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <RelativeLayout
+        android:id="@+id/selectedPhotoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_above="@+id/AddItemName"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignTop="@+id/imageView">
+
+        <ImageView
+            android:id="@+id/selectedPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

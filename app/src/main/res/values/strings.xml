@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DreamLister</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="item_price">ITEM PRICE</string>
+    <string name="price">PRICE</string>
+    <string name="item_name">ITEM NAME</string>
+    <string name="item_descriptpion">ITEM DESCRIPTPION</string>
+    <string name="name">NAME</string>
+</resources>
